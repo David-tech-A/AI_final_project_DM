@@ -20,6 +20,7 @@ Welcome to the SMiShing & Scam Detector – an AI-powered application designed t
 - [File Structure](#file-structure)
 - [Screenshots](#screenshots)
 - [Customization](#customization)
+- [Example Keywords for Scam Detection](#example-keywords-for-scam-detection)
 - [Zero-Shot Classification in Use](#zero-shot-classification-in-use)
 - [System Architecture & Workflow](#system-architecture--workflow)
 - [Example URL Matches](#example-url-matches)
@@ -209,6 +210,26 @@ AI_final_project/
 
 - **OCR**
   - If you prefer a different OCR engine (e.g., EasyOCR or Gemini-based OCR), replace the Tesseract calls with your desired approach.
+
+---
+
+## Example Keywords for Scam Detection
+
+Below are some examples of the keywords our system uses to detect scam risk:
+
+- **General Terms:**  
+  `urgent`, `help`, `free`, `now`, `claim`, `gift`, `prize`, `lottery`, `winnings`
+
+- **Banking & Security:**  
+  `atm`, `password`, `bank`, `account`, `verify`
+
+- **URL & Communication:**  
+  `http`, `.com`, `https`, `URL`, `copy`, `paste`, `www`
+
+- **Additional Words:**  
+  `love`, `call`, `txt`, `mobile`, `text`, `stop`, `reply`, `get`, `cash`, `win`, `week`, `tone`, `service`, `contact`, `msg`, `guaranteed`, `customer`
+
+*Note: This is only a subset of the full keyword list used by the system.*
 
 ---
 
