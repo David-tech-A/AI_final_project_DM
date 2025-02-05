@@ -109,10 +109,6 @@ This project is an AI-powered tool designed to detect SMiShing (SMS phishing) an
 
 1. Clone this repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
-1. Clone this repository:
-   ```bash
    git clone https://github.com/hackerbyhobby/AI_final_project.git
    cd AI_final_project
    ```
