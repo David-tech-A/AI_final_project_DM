@@ -1,6 +1,10 @@
 
 # SMiShing & Scam Detector with Safe Browsing
 
+<div align="center">
+<img src="images/scam.png" alt="Scam" width="350" />
+</div>
+
 Welcome to the SMiShing & Scam Detector – an AI-powered application designed to detect SMS phishing (SMiShing) and other scam messages. This project leverages state-of-the-art machine learning, natural language processing (NLP), and rule-based enhancements to classify messages into three categories: SMiShing, Other Scam, or Legitimate. Additionally, it integrates with Google’s Safe Browsing API to analyze URLs and provide actionable insights and explanations for each classification.
 
 ## Table of Contents
@@ -182,7 +186,14 @@ AI_final_project/
 ---
 
 ## Screenshots
-![Interface Screenshot](https://via.placeholder.com/600x400.png?text=Add+Your+Screenshot+Here)
+
+<div align="center">
+<img src="images/screenshot1.png" alt="Screenshot 1" width="350" />
+</div>
+
+<div align="center">
+<img src="images/screenshot2.png" alt="Screenshot 2" width="350" />
+</div>
 
 ---
 
@@ -247,34 +258,9 @@ pipeline("zero-shot-classification", model="joeddav/xlm-roberta-large-xnli")
 
 ### Diagram Representation
 
-User Input (Text/Screenshot)
-        │
-        ▼
-OCR (if image)
-        │
-        ▼
-Language Detection & Translation
-        │
-        ▼
-Zero-Shot Classification (Hugging Face)
-        │
-        ▼
-Keyword & URL Analysis
-        │
-        ▼
-Google Safe Browsing Check (if URLs found)
-        │
-        ▼
-Probability Boosting
-        │
-        ▼
-LLM Classification (GPT-3.5 as Cybersecurity Expert)
-        │
-        ▼
-Final Explanation by LLM (Multilingual)
-        │
-        ▼
-Display Results (Gradio UI)
+<div align="center">
+<img src="images/workflow.png" alt="Workflow Diagram" width="200" />
+</div>
 
 ---
 
