@@ -248,6 +248,25 @@ pipeline("zero-shot-classification", model="joeddav/xlm-roberta-large-xnli")
 - boost_probabilities(...) to manually adjust scores based on keywords and URLs.
 - incorporate_llm_label(...) to further refine scores using LLM-based classification.
 
+- **`joeddav/xlm-roberta-large-xnli`**, is a **multilingual zero-shot classification model** based on **XLM-RoBERTa**, trained for **Natural Language Inference (NLI)**. This is a **great fit** for this use case due to the following reasons:
+
+- **Scam tactics change frequently**, and training a fixed supervised model could become outdated.
+- **Zero-shot classification** allows the model to classify new scams without retraining.
+- This implementation **leverages NLI** by prompting the model to infer whether the given message fits one of the labels:
+  ```python
+  pipeline("zero-shot-classification", model="joeddav/xlm-roberta-large-xnli")
+  ```
+- This enables the system to **detect new scam patterns dynamically** without collecting large labeled datasets.
+
+
+- By using **XLM-RoBERTa for zero-shot classification**, we achieve:
+- **Multilingual support** for scam messages in different languages.
+- **No need for labeled datasets**, as it generalizes to unseen scams.
+- **Stronger reasoning** than simple keyword-based detection.
+- **Fast, scalable, and cost-effective** compared to training a custom model.
+
+This makes **this model choice** highly effective for **real-world, evolving SMS scam detection**. 🚀
+
 ---
 
 ## System Architecture & Workflow
